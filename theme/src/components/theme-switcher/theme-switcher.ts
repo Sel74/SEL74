@@ -2,10 +2,10 @@ import { LitElement, html, css } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 
 import {
+	blueThemeIcon,
 	classicThemeIcon,
 	darkThemeIcon,
 	earthThemeIcon,
-	blueThemeIcon,
 	orangeThemeIcon,
 } from './icons';
 
@@ -24,11 +24,6 @@ const themes = [
     name: 'earth',
     icon: earthThemeIcon,
     label: 'Earth',
-  },
-  {
-    name: 'ocean',
-    icon: blueThemeIcon,
-    label: 'Ocean',
   },
   {
     name: 'sand',
@@ -91,7 +86,7 @@ export class ThemeSwitcher extends LitElement {
 		if (localStorageTheme !== null) {
 			this._setTheme(localStorageTheme);
 		} else {
-      this._setTheme('default');
+      this._setTheme('ocean');
     }
 	}
 
@@ -113,7 +108,7 @@ export class ThemeSwitcher extends LitElement {
 			_heroImage.src = '/assets/images/home/earth-hero.jpg';
 		}
 		if (theme === 'ocean') {
-			_heroImage.src = '/assets/images/home/ocean-hero.jpg';
+			_heroImage.src = '/assets/images/home/annecy.jpg';
 		}
 		if (theme === 'sand') {
 			_heroImage.src = '/assets/images/home/sand-hero.jpg';

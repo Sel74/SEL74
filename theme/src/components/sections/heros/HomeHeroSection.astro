@@ -8,30 +8,26 @@ import {ThemeSwitcher} from '../../theme-switcher/theme-switcher';
 <Container>
 	<section class="hero-section__section">
 		<div class="hero-section__text">
-				<h1>Welcome to Odyssey</h1>
-				<p>
-					A marketing website theme built with <a
-						href="https://astro.build"
-						target="_blank"
-						rel="noreferrer">Astro</a
-					> and carefully crafted for startups and businesses.
+				<h1>Bienvenue sur le SEL de la région Annecienne</h1>
+				<p>				
+					<b>Le SEL c'est quoi?</b>					
 				</p>
+				<p>Initiative locale, le SEL (Système d’Échange Local) d’Annecy, développe une économie plus humaine favorisant les échanges et la solidarité. <b>Echanges de biens, de services, des savoirs.</b></p>
+				
 				<div class="hero-btns__container">
-					<Button href="/theme/get-started" customIcon
-						>Get Started
+					<Button href="/sel/en-savoir-plus" customIcon
+						>En savoir +
             <Fragment slot="icon">
               <Icon name="ic:baseline-chevron-right"/>
             </Fragment>
-            </Button
-					>
-					<Button href="/theme/style-guide" unelevated>Style Guide</Button>
+            </Button>
 				</div>
         {settings.enableThemeSwitcher && <ThemeSwitcher client:load/>}
 		</div>
 		<div class="hero-section__image">
 				<picture>
 					<img
-						src="/assets/images/home/classic-hero.jpg"
+						src="/assets/images/home/annecy.jpg"
 						alt="Astro Odyssey"
 						id="home-hero-image"
 					/>
