@@ -12,7 +12,7 @@ export const footerSocials = [
   },*/
   {
     name: 'Github',
-    url: 'https://github.com/littlesticks',
+    url: 'https://github.com/Sel74/SEL74',
     icon: "mdi:github",
   },
   /*
